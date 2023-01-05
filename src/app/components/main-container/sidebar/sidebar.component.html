@@ -1,1 +1,49 @@
-<p>sidebar works!</p>
+<section class="sidebar">
+
+    <div class="sidebar-header">
+        <img alt="avatar"
+        mat-card-avatar
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT8K-kfbxSsaGJugBkF_sfdl1Ms1UUKcRnvRQ&usqp=CAU">
+
+        <div class="sidebar-header-icon">
+            <button mat-icon-button>
+                <mat-icon>donut_large</mat-icon>
+              </button>
+              <button mat-icon-button>
+                <mat-icon>chat</mat-icon>
+              </button>
+              <button [mat-menu-trigger-for]="menu" mat-icon-button>
+                <mat-icon>more_vert</mat-icon>
+              </button>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item>Logout</button>
+              </mat-menu>
+        </div>
+
+    </div>
+
+    <div class="sidebar-search">
+        <div class="sidebar-search-content">
+          <form>
+            <button class="sidebar-search-content-icon" mat-icon-button>
+              <mat-icon>search_outline</mat-icon>
+            </button>
+            <input class="sidebar-search-content_-nput"
+                   name="search"
+                   ngModel
+                   placeholder="Search or start new chat"
+                   type="text">
+    
+            <button style="display:none;" type="submit"></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="sidebar__content">
+        <ng-container>
+          <app-sidebar-content></app-sidebar-content>
+        </ng-container>
+      </div>
+    
+
+</section>
