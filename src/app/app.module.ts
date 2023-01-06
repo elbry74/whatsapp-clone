@@ -12,6 +12,7 @@ import { ChatDefaultPageComponent } from './components/main-container/chat-area/
 import { ChatRoomComponent } from './components/main-container/chat-area/chat-room/chat-room.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material/material.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { MaterialModule } from './shared/material/material.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
 
+  onFormSubmit(form:NgForm):void{
+    console.log(form.value.search);
+  }
 }

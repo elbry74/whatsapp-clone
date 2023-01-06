@@ -1,8 +1,7 @@
 <section class="sidebar">
 
     <div class="sidebar-header">
-        <img alt="avatar"
-        mat-card-avatar
+        <img alt="avatar" mat-card-avatar
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT8K-kfbxSsaGJugBkF_sfdl1Ms1UUKcRnvRQ&usqp=CAU">
 
         <div class="sidebar-header-icon">
@@ -24,7 +23,7 @@
 
     <div class="sidebar-search">
         <div class="sidebar-search-content">
-          <form>
+          <form  #form="ngForm" (ngSubmit)="onFormSubmit(form)">
             <button class="sidebar-search-content-icon" mat-icon-button>
               <mat-icon>search_outline</mat-icon>
             </button>
@@ -39,7 +38,7 @@
         </div>
       </div>
 
-      <div class="sidebar__content">
+      <div class="sidebar-content">
         <ng-container>
           <app-sidebar-content></app-sidebar-content>
         </ng-container>
