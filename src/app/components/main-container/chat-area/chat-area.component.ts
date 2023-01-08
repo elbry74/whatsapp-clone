@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-chat-area',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./chat-area.component.css']
 })
 export class ChatAreaComponent {
+  formSubmit(form:NgForm):void{
 
+  }
 }
