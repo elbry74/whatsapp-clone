@@ -1,6 +1,10 @@
 <div class="chat-area">
     <ng-container>
-        <div class="chat-area-message">
+        <div  
+         [ngClass]="{
+     'chat-area-message-owner': true
+    }"
+        class="chat-area-message">
             <span class="chat-area-message-name"></span>
             <span class="chat-area-message-text"></span>
             <span class="chat-area-message-time"></span>

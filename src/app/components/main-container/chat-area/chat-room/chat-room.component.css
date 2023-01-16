@@ -37,3 +37,7 @@
         font-size: x-small;
         color: darkgray;
       }
+      .chat-area-message-owner{
+        margin-left: auto;
+        background-color: #DCF8C6;
+            }

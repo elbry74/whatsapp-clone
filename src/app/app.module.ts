@@ -13,6 +13,12 @@ import { ChatRoomComponent } from './components/main-container/chat-area/chat-ro
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material/material.module';
 import { FormsModule } from '@angular/forms';
+import {AngularFireModule} from '@angular/fire';
+import {environment} from '../environments/environment';
+import {AngularFireAuthModule} from '@angular/fire/auth';
+import {FirestoreModule} from '@angular/fire/firestore';
+import {RouterModule} from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +37,10 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
